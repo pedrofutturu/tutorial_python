@@ -1,0 +1,26 @@
+#Instalando Servidor Django Dev
+
+#criando a pasta do projeto
+mkdir django
+
+#criando o ambiente virtual do python isolando seu projeto
+python3 -m venv env
+
+#Configure o interpretador da sua IDE para funcionar com o python da pasta /bin/ criada pelo venv.
+
+#instale o django
+pip3 install django
+
+#criar projeto django
+django-admin startproject mysite
+
+#Next, run the Django command-line utilities to create the database tables automatically:
+$ python manage.py makemigrations
+python3 manage.py migrate
+
+#crie o super user
+python3 manage.py createsuperuser
+
+#rode o servidor de desenvolvedor
+python3 manage.py runserver
+
